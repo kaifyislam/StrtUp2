@@ -1,0 +1,22 @@
+/* styles.css */
+.pop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center content vertically on the viewport */
+}
+
+.popping-element {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: scale(0); /* Initially scaled to 0 */
+    transition: transform 5s ease-in-out; /* Transition for slow scaling */
+}
+
+.pop-button {
+    cursor: pointer;
+}
+.pop-button:hover + .popping-element {
+    transform: scale(1); /* Scales to 1 on hover */
+}
